@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.slick-list, .slick-slider, .slick-track {
+  width: 240px;
+  overflow: visible;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .slick-list, .slick-slider, .slick-track {
+      width: 100%;
+    } 
+}
+
+.slick-slide {
+  opacity: 0.5;
+}
+
+.slick-slide.slick-active {
+  opacity: 1;
+}

@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+
+import NavData from './Data/NavData'
+import FooterData from './Data/FooterData'
+import HomePage from './Data/HomePage'
+
+import Nav from './Components/Nav'
+import Footer from './Components/Footer'
+import Hero from './Components/Hero'
+import ThreeCallouts from './Components/ThreeCallouts'
+import CategoryTiles from './Components/CategoryTiles'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>  
+        <Nav data={NavData}></Nav>
+        <Hero data={HomePage.hero} />
+        <ThreeCallouts data={HomePage.threeCallouts} />
+        <CategoryTiles data={HomePage.categoryTiles} />
+        <Footer data={FooterData}></Footer>
+    </main>
   );
 }
 
