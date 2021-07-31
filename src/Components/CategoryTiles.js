@@ -19,7 +19,9 @@ const Tile = styled.div `
     margin-bottom: 8px; 
 
     &:nth-child(odd) {
-        margin-right: 8px;
+        @media (min-width: 768px) {
+            margin-right: 8px;
+        }
     }
 
     @media (min-width: 768px) {

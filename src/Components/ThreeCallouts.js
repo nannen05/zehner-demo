@@ -8,6 +8,7 @@ const Wrapper = styled.div `
     display: block;
     padding-top: 60px;
     padding-bottom: 60px;
+    overflow: hidden;
 
     @media (min-width: 768px) {
         padding-top: 100px;
